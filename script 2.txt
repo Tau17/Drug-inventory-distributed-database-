@@ -1,0 +1,32 @@
+INSERT INTO DRUG
+(Drug_ID, Name, Description, Category, Price , Manufacture)
+VALUES ('STP123', 'Penicillin', 'Treat bacterial infections', 'Antibiotics', 99, 'Butha Buthe'),
+('POP243', 'Albunium', 'Hydration', 'Intrevenous Fluids', 45, 'Hlotse'),
+('SOC763', 'Paroxetine', 'Treat Depression', 'Antidipressants', 72, 'Butha Buthe'),
+('FIL567', 'Heparanin', 'Reduce Bloot Clots', 'Anticoagulant', 37, 'Roma'),
+('EXO765', 'Morphine', 'Relieve Pain', 'Analgesics', 92, 'Mafeteng');
+
+
+INSERT INTO INVENTORY
+(INVENTORY_ID, Drug_ID, Quantity, Manufacture)
+VALUES (3, 'STP123', 10, 'Bilong Pty Itd'),
+(1, 'STP123', 15, 'Acrileg Pty Itd'),
+(4, 'POP234', 35, 'Man_City Itd'),
+(7, 'FIL567', 60, 'Bilong Pty Itd '),
+(5, 'EXOC765', 10, 'Man_City Itd');
+
+INSERT INTO SUPPLIER
+(Supplier_ID, Name, Contact_Details, Address)
+VALUES ('A1','Thabo Bester', 2665657663, 'Khapung'),
+('A2','Warren Masemola', 2665648363, 'Manonyane'),
+('A3','Lucas Ntuli', 26658487393, 'Kamoho'),
+('A4','Soki Srbotsa', 2663437393, 'Tlokoeng'),
+('A5','Alfred Maime', 2667383739, 'Khapung');
+
+INSERT INTO ORDERS
+(ORDER_ID, Drug_ID, Supplier_ID, Quantity, Status, Date) 
+VALUES (242, 'STP123', 'A1', 10, 'Pending', '20 March'), 
+(652, 'STP123', 'A4', 10, 'Delivered', '31 March'), 
+(743, 'POP234', 'A3', 35, 'Delivered', '20 March'), 
+(234, 'FIL567', 'A2', 5, 'Processing', '24 April'), 
+(432, 'EXO765', 'A1', 10, 'Pending', '24 April');

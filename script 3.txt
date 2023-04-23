@@ -1,0 +1,7 @@
+SELECT * FROM ORDERS;
+SELECT * FROM DRUG;
+SELECT NAME FROM DRUG WHERE Price > 50;
+SELECT Name, Drug_ID FROM DRUG Natural Join INVENTORY Where DRUG.Drug_ID = INVENTORY.Drug_ID;
+SELECT Drug_ID FROM INVENTORY WHERE Quantity <= 30;
+Select * from inventory;
+select * from supplier;

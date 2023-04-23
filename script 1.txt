@@ -1,0 +1,36 @@
+CREATE TABLE INVENTORY (
+INVENTORY_ID integer,
+Drug_ID text,
+Quantity integer,
+Manufacture text,
+PRIMARY KEY (INVENTORY_ID)
+);
+
+CREATE TABLE ORDERS (
+ORDER_ID integer,
+Drug_ID text,
+Quantity integer,
+Date  text,
+Status text,
+Supplier_ID text,
+PRIMARY KEY (ORDER_ID)
+);
+
+CREATE TABLE DRUG (
+Drug_ID text,
+Name text,
+Description text,
+Category text,
+Price integer,
+Manufacture text,
+Location text,
+PRIMARY KEY (Drug_ID)
+);
+
+CREATE TABLE SUPPLIER (
+Supplier_ID text,
+Name text,
+Contact_Details float,
+Address text,
+PRIMARY KEY (Supplier_ID)
+);
